@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.label ,.star[_ngcontent-ng-c611284159]{
+    font-size: 18px !important;
+}
+label , .star[_ngcontent-ng-c611284159]:hover{
+    transform: none !important;
+}
