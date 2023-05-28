@@ -1,0 +1,61 @@
+<p>product-list works!</p>
+
+<ngb-carousel
+	*ngIf="images"
+	[showNavigationArrows]="showNavigationArrows"
+	[showNavigationIndicators]="showNavigationIndicators"
+>
+	<ng-template ngbSlide *ngFor="let image of images">
+		<div class="picsum-img-wrapper my-3">
+			<img [src]="image" alt="Random slide" class="w-100" />
+		</div>
+	</ng-template>
+</ngb-carousel>
+<div class="category">
+	<a class="category-btn" (click)="filterPost('All')" style="cursor: pointer;">All</a>
+	<div *ngFor="let category of uniqueCategories">
+		<a class="category-btn" (click)="filterPost(category)" style="cursor: pointer;">{{category.toUpperCase()}}</a>
+	</div>
+</div>
+
+
+	<div class="row">
+		  <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 my-2" *ngFor="let product of filteredProducts">
+			<product [product]="product"></product>
+		  </div>
+		</div>
+
+	
+
+	
+ 
+
+  <!-- <ng-template *ngIf="filteredProducts.length > 0; else AllProducts">
+	<div class="row">
+	  <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 my-2" *ngFor="let product of filteredProducts">
+		<product [product]="product"></product>
+	  </div>
+	</div>
+  </ng-template>
+  
+  
+
+
+
+
+<!-- 
+<ng-template *ngIf="filteredProducts.length>0; else AllProducts">
+<div class="row">
+    <div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 my-2" *ngFor="let product of filteredProducts">
+        <product [product]="product"></product>
+    </div>
+</div>
+</ng-template>
+<ng-template #AllProducts>
+	
+		<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 my-2" *ngFor="let product of products">
+			<product [product]="product"></product>
+		
+		</div>
+</ng-template> -->
+

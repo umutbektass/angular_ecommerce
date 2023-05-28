@@ -1,0 +1,17 @@
+.header{
+    margin-top: 100px;
+    text-align: center;
+}
+.collection-p{
+font-size: 17px;
+}
+.ourcollection-p{
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+.carousel{
+    position: relative;
+    height: 400px;
+    border: 1px solid black;
+}

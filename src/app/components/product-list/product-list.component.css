@@ -1,0 +1,19 @@
+.category{
+    display: flex;
+    gap : 30px 20px;
+    margin: 50px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.category-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 2px;
+    border: 1px solid #ffff;
+    border-radius: 10px;
+    width: 190px;
+    background-color: rgb(216, 216, 216);
+    box-shadow: rgba(5, 5, 5, 0.1) 0px 2px 6px;
+    text-align: center;
+}
