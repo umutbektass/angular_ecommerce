@@ -18,12 +18,14 @@ export class ProductListComponent {
 		config.showNavigationIndicators = true;
   }
   api:string = "https://dummyjson.com/products";
-  
+
+
   products:any = []
   uniqueCategories:any=[]
 
   ngOnInit(): void {
     this.get()
+    console.log("1")
    
   };
 
